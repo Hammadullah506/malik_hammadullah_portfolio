@@ -320,6 +320,51 @@ function initWarpLabControls() {
    9. PROJECT DEEP-DIVE MODALS
    ========================================================================== */
 const projectData = {
+  mhdagency: {
+    title: 'Malik Hammad Digital — Enterprise Web Solutions & Agency',
+    category: 'Enterprise Web Architecture & Agency',
+    status: 'Live Orbit • Production • High Authority',
+    description: 'Official flagship digital agency and full-stack web solutions platform founded by Malik Hammadullah. Engineered for enterprise clients with sub-second TTFB, custom PHP/WordPress architecture, LiteSpeed CDN caching, high-converting funnel systems, and zero-trust cybersecurity protocols.',
+    stack: ['WordPress / PHP 8', 'LiteSpeed Cache Engine', 'Modern UI/UX', 'Cloudflare CDN', 'SEO & Core Web Vitals', 'Zero-Trust Security'],
+    highlights: [
+      'Engineered high-converting digital agency ecosystem with sub-second server response times.',
+      'Architected custom service funnels, client onboarding pipelines, and enterprise consultation booking.',
+      'Optimized full Core Web Vitals (95+ Mobile & Desktop PageSpeed) using advanced edge caching and asset minification.',
+      'Built zero-trust security hardening protecting client infrastructure from DDoS and automated exploits.'
+    ],
+    liveUrl: 'https://malikhammaddigital.com/',
+    githubUrl: 'https://github.com/Hammadullah506'
+  },
+  mhdblog: {
+    title: 'Malik Hammad Digital Blog — Web Architecture & Tech Publication',
+    category: 'Tech Publication & Digital Insights',
+    status: 'Live Orbit • Production • 95+ Mobile PageSpeed',
+    description: 'A high-performance modern tech and web architecture publication featuring modern Bento Grid layouts, 0ms render-blocking critical CSS, instant dark/light mode switching, responsive typography, and deep engineering case studies.',
+    stack: ['Bento Grid UI', 'Critical CSS (0ms Blocking)', 'JavaScript (ES6+)', 'Dark/Light Theme Engine', 'Core Web Vitals 95+', 'Technical SEO'],
+    highlights: [
+      'Crafted modern Bento Grid layout showcasing technical articles, architecture deep dives, and performance guides.',
+      'Implemented zero-render-blocking inlined critical CSS delivering instantaneous mobile page rendering.',
+      'Engineered zero-layout-shift (CLS 0.00) dark and light mode toggle with persistent local preferences.',
+      'Integrated structured JSON-LD Schema graph for maximum Google Search authority and rich snippet indexing.'
+    ],
+    liveUrl: 'https://blog.malikhammaddigital.com/',
+    githubUrl: 'https://github.com/Hammadullah506'
+  },
+  techpulse: {
+    title: 'TechPulse Prime — Premium Smart Tech & Gadgets Store',
+    category: 'E-Commerce & High-Converting Store',
+    status: 'Live Orbit • Production • Nationwide Shipping',
+    description: "Pakistan's premier destination for smart gadgets, wearables, studio audio gear, and modern desk technology. Powered by a high-converting WooCommerce checkout flow, nationwide Cash on Delivery (COD) automation, live order tracking, and 7-day replacement guarantee.",
+    stack: ['WooCommerce', 'WordPress / PHP 8', 'Cash on Delivery (COD)', 'Modern E-Commerce UX', 'CDN & Speed Engine', 'Payment Gateways'],
+    highlights: [
+      'Architected high-converting e-commerce storefront with streamlined 1-step checkout and automated COD verification.',
+      'Implemented responsive product filtering, dynamic image zoom galleries, and instant category navigation.',
+      'Integrated nationwide shipping logistics conduits across Karachi, Lahore, Islamabad, and all nationwide hubs.',
+      'Engineered automated inventory telemetry, customer review proof, and responsive mobile-first commerce experience.'
+    ],
+    liveUrl: 'https://techpulseprime.store/',
+    githubUrl: 'https://github.com/Hammadullah506'
+  },
   malikdigital: {
     title: 'Malik Digital Skills - Online Training & EdTech Platform',
     category: 'EdTech & Full Stack Web App',
