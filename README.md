@@ -38,6 +38,16 @@ Designed with a sleek **Cosmic Glassmorphism HUD** aesthetic, this portfolio hig
 
 ---
 
+## 🤖 AI Agents & Automation Projects
+
+| Project | What it does | Stack | Links |
+| :--- | :--- | :--- | :--- |
+| **AI Sales Management Agent** | Call-center AI assistant: lead scoring, neglected leads, lead rotation and reports through CRM tools, with manager approval, business rules in code and an audit log (English + Arabic) | Python, Claude API tool calling, SQLite, pytest | [Source](https://github.com/Hammadullah506/ai-sales-agent) |
+| **MHD Trader & Crypto Signals** | 24/7 crypto trading bot with a live dashboard, RSI/EMA signals, signed Binance/Bitunix orders and a Telegram signals channel; public screener tracking 150 pairs | Node.js, Express, Exchange APIs, Telegram Bot API | [Live screener](https://signals.malikhammaddigital.com/) · [Source](https://github.com/Hammadullah506/bitunix-trader) |
+| **ContentPulse AI** | Turns one article into X threads, LinkedIn posts, Quora answers, briefs, slide decks and video scripts | Next.js, TypeScript, OpenAI / DeepSeek, MySQL | [Source](https://github.com/Hammadullah506/contentpulse-ai) |
+
+---
+
 ## 🌟 Featured Live Production Projects
 
 ### 1. Malik Hammad Digital Agency

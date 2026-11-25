@@ -320,6 +320,51 @@ function initWarpLabControls() {
    9. PROJECT DEEP-DIVE MODALS
    ========================================================================== */
 const projectData = {
+  aisalesagent: {
+    title: 'AI Sales Management Agent — Claude Tool Calling over a CRM',
+    category: 'AI Agent & CRM Automation',
+    status: 'Open Source • Tested • Demo CRM',
+    description: 'An AI management assistant for call-center sales teams. Managers give instructions in English or Arabic, and the agent uses Claude tool calling to score leads, find neglected leads and missed opportunities, rebalance workload between reps, create follow-up tasks and produce performance reports.',
+    stack: ['Python', 'Claude API (tool calling)', 'Strict JSON Schemas', 'SQLite CRM', 'Human-in-the-loop Approval', 'Audit Logging', 'pytest'],
+    highlights: [
+      '10 CRM tools with strict schemas: lead search, rule-based scoring, neglected leads, workload, reports and data quality checks.',
+      'Business rules enforced in code: rep capacity limits, valid pipeline transitions and no reassignment of closed leads.',
+      'Sensitive actions (lead rotation, status changes) wait for a manager\'s approval; viewers have read-only access.',
+      'Every tool call is written to an audit log: who asked, what ran and the outcome. 12 offline tests cover the safety layers.'
+    ],
+    liveUrl: null,
+    githubUrl: 'https://github.com/Hammadullah506/ai-sales-agent'
+  },
+  mhdtrader: {
+    title: 'MHD Trader & Crypto Signals — Automated Trading Bot',
+    category: 'Trading Automation & Bots',
+    status: 'Live Orbit • Running 24/7',
+    description: 'A Node.js trading bot with a password-protected web dashboard. It reads live market data from Binance and Bitunix, scores coins with RSI and EMA trend signals, places signed orders, runs DCA and futures paper-trading strategies, and sends alerts to Telegram. A public screener tracks 150 pairs in real time.',
+    stack: ['Node.js / Express', 'Binance & Bitunix APIs', 'HMAC-SHA256 Signing', 'Telegram Bot API', 'Lightweight Charts', 'Linux VPS / PM2'],
+    highlights: [
+      'Signal engine with RSI, EMA 9/21/50 and trend scoring, shared by the bot and the live screener.',
+      'Signed exchange orders with server-time sync and a fallback data endpoint for reliability.',
+      'DCA dip-buying strategy and a futures paper-trading mode for testing without real money.',
+      'MHD Crypto Signals Telegram channel: automated entry, stop loss and targets for 40 coins.'
+    ],
+    liveUrl: 'https://signals.malikhammaddigital.com/',
+    githubUrl: 'https://github.com/Hammadullah506/bitunix-trader'
+  },
+  contentpulse: {
+    title: 'ContentPulse AI — Content Repurposing SaaS',
+    category: 'AI SaaS & Web App',
+    status: 'Production Build • Vercel',
+    description: 'An AI web app that turns one article into platform-ready social content. Paste text, a URL or a WordPress/RSS feed, choose tone and audience, and generate X threads, LinkedIn posts, Quora answers, executive briefs, carousel slide decks and short video scripts.',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'OpenAI / DeepSeek APIs', 'MySQL', 'Google OAuth'],
+    highlights: [
+      'Six output formats generated from one source, with copy and Markdown export.',
+      'URL extraction pulls full article text; WordPress/RSS sync loads posts from a blog feed.',
+      'Works with server-side keys or the user\'s own OpenAI/DeepSeek key.',
+      'Google sign-in and saved generation history backed by MySQL.'
+    ],
+    liveUrl: null,
+    githubUrl: 'https://github.com/Hammadullah506/contentpulse-ai'
+  },
   mhdagency: {
     title: 'Malik Hammad Digital — Enterprise Web Solutions & Agency',
     category: 'Enterprise Web Architecture & Agency',
@@ -515,7 +560,7 @@ function initProjectModals() {
         </div>
 
         <div style="display:flex; gap:16px; flex-wrap:wrap;">
-          <a href="${data.liveUrl}" target="_blank" class="cosmic-btn-primary" style="padding:10px 24px; font-size:0.85rem;"><i class="fas fa-external-link-alt"></i> Launch Live Orbit</a>
+          ${data.liveUrl ? `<a href="${data.liveUrl}" target="_blank" rel="noopener noreferrer" class="cosmic-btn-primary" style="padding:10px 24px; font-size:0.85rem;"><i class="fas fa-external-link-alt"></i> Launch Live Orbit</a>` : ''}
           <a href="${data.githubUrl}" target="_blank" class="cosmic-btn-secondary" style="padding:10px 24px; font-size:0.85rem;"><i class="fab fa-github"></i> Inspect Source</a>
         </div>
       `;
